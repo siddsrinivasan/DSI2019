@@ -22,4 +22,7 @@ export class LibretaContactosPage {
     console.log('ionViewDidLoad LibretaContactosPage');
   }
 
+  onLoadContactosPage​(){ ​this​.​navCtrl​.​push​(​NuevoContactosPage);
+  }
+
 }

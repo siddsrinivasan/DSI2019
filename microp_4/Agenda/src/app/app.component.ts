@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LibretaContactosPage } from '../pages/libreta-contactos/libreta-contactos';
 import { AcercaDePage } from '../pages/acerca-de/acerca-de';
+import { NuevoContactoPage } from '../pages/nuevo-contacto/nuevo-contacto';
 
 @Component({
   templateUrl: 'app.html'
