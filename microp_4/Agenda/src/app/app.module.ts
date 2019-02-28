@@ -15,16 +15,10 @@ import​ { ​SplashScreen​ } ​from​ ​'@ionic-native/splash-screen'​;
 @​NgModule​({ ​declarations:​ [
 ​MyApp​, ​HomePage​,
 ListPage​, ​LibretaContactosPage​, ​AcercaDePage​, ​NuevoContactoPage
-], ​imports:​ [
-​BrowserModule​,
-​IonicModule​.​forRoot​(​MyApp​), ],
-​bootstrap:​ [​IonicApp​], ​entryComponents:​ [
-​MyApp​,
-​HomePage​,
-​ListPage​, ​LibretaContactosPage​, ​AcercaDePage​, ​NuevoContactoPage
-], ​providers:​ [
-​StatusBar​,
-​SplashScreen​,
-{​provide:​ ​ErrorHandler​, ​useClass:​ ​IonicErrorHandler​}
-] })
+], ​
+imports:​ [BrowserModule​, IonicModule​.​forRoot​(​MyApp​),],
+​bootstrap:​ [​IonicApp​], ​
+entryComponents:​ [MyApp​,HomePage​, ListPage​, ​LibretaContactosPage​, ​AcercaDePage​, ​NuevoContactoPage], ​
+providers:​ [StatusBar​, SplashScreen​, {​provide:​ ​ErrorHandler​, ​useClass:​ ​IonicErrorHandler​}] })
+
 export​ ​class​ ​AppModule​ {}
