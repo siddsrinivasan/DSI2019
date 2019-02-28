@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import {NuevoContactoPage} from '../nuevo-contacto/nuevo-contacto';
+import { AcercaDePage } from '../acerca-de/acerca-de';
 
 /**
  * Generated class for the LibretaContactosPage page.
