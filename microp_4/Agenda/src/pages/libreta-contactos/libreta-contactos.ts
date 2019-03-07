@@ -33,12 +33,6 @@ export class LibretaContactosPage {
     console.log('ionViewDidLoad LibretaContactosPage');
   }
 
-  onAddContact(value:
-    {nombre:string,organizacion:string,movil:string,correo:string}){
-      this.ContactService.addContact(value);
-      this.navCtrl.pop();
-  }
-
   onLoadContactosPage(){
     this.navCtrl.push(NuevoContactoPage);
   }
