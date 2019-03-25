@@ -12,6 +12,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {ContactService} from '../services/contact.service'
 import { Services } from '@angular/core/src/view';
 
+import {FIREBASE_CONFIG} from '../app/firebase.credentials';
+import {AngularFireModule} from 'angularfire2';
+import {AngularFireDatabaseModule} from 'angularfire2/database'
+
 @NgModule({
     declarations: [
      MyApp,
@@ -24,6 +28,8 @@ import { Services } from '@angular/core/src/view';
     imports: [
      BrowserModule,
      IonicModule.forRoot(MyApp),
+     AngularFireModule.initializeApp(FIREBASE_CONFIG),
+     AngularFireDatabaseModule
      ],
     bootstrap: [IonicApp],
     entryComponents: [
