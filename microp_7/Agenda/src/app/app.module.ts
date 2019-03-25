@@ -15,6 +15,7 @@ import { Services } from '@angular/core/src/view';
 import {FIREBASE_CONFIG} from '../app/firebase.credentials';
 import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database'
+import { VerContactoPage } from '../pages/ver-contacto/ver-contacto';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import {AngularFireDatabaseModule} from 'angularfire2/database'
      ListPage,
      LibretaContactosPage,
      AcercaDePage,
-     NuevoContactoPage
+     NuevoContactoPage,
+     VerContactoPage
      ],
     imports: [
      BrowserModule,
@@ -33,12 +35,12 @@ import {AngularFireDatabaseModule} from 'angularfire2/database'
      ],
     bootstrap: [IonicApp],
     entryComponents: [
-     MyApp,
-     HomePage,
-     ListPage,
-     LibretaContactosPage,
-    AcercaDePage,
-    NuevoContactoPage
+        MyApp,
+        HomePage,
+        ListPage,
+        LibretaContactosPage,
+        AcercaDePage,
+        NuevoContactoPage
     ],
     providers: [
     StatusBar,
