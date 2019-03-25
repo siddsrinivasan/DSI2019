@@ -35,6 +35,7 @@ import { VerContactoPage } from '../pages/ver-contacto/ver-contacto';
     entryComponents: [
         MyApp,
         HomePage,
+        VerContactoPage,
         LibretaContactosPage,
         AcercaDePage,
         NuevoContactoPage
