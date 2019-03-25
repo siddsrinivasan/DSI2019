@@ -3,7 +3,6 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import{LibretaContactosPage} from '../pages/libreta-contactos/libreta-contactos';
 import{AcercaDePage} from '../pages/acerca-de/acerca-de';
 import{NuevoContactoPage} from '../pages/nuevo-contacto/nuevo-contacto';
@@ -21,7 +20,6 @@ import { VerContactoPage } from '../pages/ver-contacto/ver-contacto';
     declarations: [
      MyApp,
      HomePage,
-     ListPage,
      LibretaContactosPage,
      AcercaDePage,
      NuevoContactoPage,
@@ -37,7 +35,6 @@ import { VerContactoPage } from '../pages/ver-contacto/ver-contacto';
     entryComponents: [
         MyApp,
         HomePage,
-        ListPage,
         LibretaContactosPage,
         AcercaDePage,
         NuevoContactoPage

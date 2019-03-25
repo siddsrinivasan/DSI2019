@@ -6,6 +6,7 @@ import { AcercaDePage } from '../acerca-de/acerca-de';
 import { Contact } from '../../models/contact.model';
 import {ContactService} from '../../services/contact.service';
 import {Observable} from 'rxjs/Observable';
+import { VerContactoPage } from '../ver-contacto/ver-contacto';
 
 /**
  * Generated class for the LibretaContactosPage page.
@@ -28,17 +29,16 @@ export class LibretaContactosPage {
   }
 
   ionViewWillEnter(){
-    this.contacts$ = this.ContactService.
-    getContacts()
-    .snapshotChanges()
+    this.contacts$ = this.ContactService
+    .getContacts()
+    .snapshotChanges() 
     .map(
-      changes => {
-        return changes.map(c=> ({
-        key: c.payload.key, ...c.payload.val()
-        }));
-      }
-    );
-  }
+    changes => {
+    return changes.map(c=> ({
+    key: c.payload.key, ...c.payload.val()
+    }));
+    });
+    }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LibretaContactosPage');
@@ -46,5 +46,9 @@ export class LibretaContactosPage {
 
   onLoadContactosPage(){
     this.navCtrl.push(NuevoContactoPage);
+  }
+
+  onItemTapped($event, contact){
+    this.navCtrl.push(VerContactoPage, contact);
   }
 }
